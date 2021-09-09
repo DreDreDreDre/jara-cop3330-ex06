@@ -31,7 +31,14 @@ public class App
 
         yearsLeft = retiringAge - currentAge;
 
-        System.out.println("You have " + yearsLeft + " years left until you can retire.");
-        System.out.println("It's " + year + ", so you can retire in " + (year + yearsLeft));
+        if(yearsLeft > 0)
+        {
+            System.out.println("You have " + yearsLeft + " years left until you can retire.");
+            System.out.println("It's " + year + ", so you can retire in " + (year + yearsLeft));
+        }
+        else
+        {
+            System.out.println("You already can retire.");
+        }
     }
 }
