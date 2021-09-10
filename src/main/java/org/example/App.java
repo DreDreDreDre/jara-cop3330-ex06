@@ -40,5 +40,7 @@ public class App
         {
             System.out.println("You already can retire.");
         }
+
+        sc.close();
     }
 }
